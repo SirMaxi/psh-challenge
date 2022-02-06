@@ -1,0 +1,15 @@
+.card {
+    background-color: none !important;
+    border: none !important;
+}
+
+.header {
+    background-color: red;
+    min-height: 140px;
+    img {
+        max-width: 90px;
+    }
+    &-title {
+        color: white;
+    }
+}

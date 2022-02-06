@@ -15,8 +15,8 @@
     "noFallthroughCasesInSwitch": true,
     "allowSyntheticDefaultImports": true,
     "jsx": "react-jsx",
-    "baseUrl": "src/"
+    "baseUrl": "src"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src", "index.d.ts"],
   "exclude": ["node_modules"]
 }

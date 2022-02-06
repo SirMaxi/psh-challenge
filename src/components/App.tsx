@@ -1,14 +1,9 @@
 import React from 'react'
 import '../scss/app.scss'
+import ChatScreen from './ChatScreen'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <p>Edit src/App.tsx and save to reload.</p>
-      </header>
-    </div>
-  )
+const App: React.FC = () => {
+  return <ChatScreen />
 }
 
 export default App
