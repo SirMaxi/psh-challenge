@@ -1,4 +1,5 @@
 import React from 'react'
+import './item.scss'
 
 interface ItemProp {
   conversationId: string
@@ -9,11 +10,25 @@ interface ItemProp {
   action: any
 }
 
-const Item: React.FC<ItemProp> = (props: ItemProp) => {
-  const { conversationId, name, imageURL, date, message, action } = props
+const Item: React.FC<ItemProp> = ({
+  conversationId,
+  name,
+  imageURL,
+  date,
+  message,
+  action,
+}) => {
   return (
-    <div role="presentation" onClick={() => action(conversationId)}>
-      {name} {imageURL}, {date}, {message}
+    <div
+      onClick={() => action(conversationId)}
+      className="d-flex chatRoom justify-content-between"
+    >
+      <img src={imageURL} alt="avatar" />
+      <div className="middle-column mx-5 ">
+        <span className="middle-column-name fw-bolder">{name}</span>
+        <span className="grey-text">{message}</span>
+      </div>
+      <span className="grey-text">{date}</span>
     </div>
   )
 }

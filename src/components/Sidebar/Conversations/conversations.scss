@@ -1,0 +1,20 @@
+.group {
+  display: flex;
+  align-items: center;
+  min-height: 120px;
+  border-bottom: 3px solid #7d7d7d;
+  padding: 0px 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: #3c3d3f;
+  }
+}
+
+.border-active {
+  background-color: #3c3d3f;
+  border-right: 3px solid red;
+}
+
+.border-disactive {
+  margin-right: 3px;
+}

@@ -2,9 +2,14 @@ import { Conversation } from 'mock/conversations'
 import { User } from 'mock/users'
 
 const chatReducer = (
-  state: { users: User[]; conversations: Conversation[] } = {
+  state: {
+    users: User[]
+    conversations: Conversation[]
+    activeChat: string
+  } = {
     users: [],
     conversations: [],
+    activeChat: '111',
   },
   action: { type: string; payload: any }
 ) => {
@@ -15,6 +20,11 @@ const chatReducer = (
       return {
         ...state,
         conversations: state.conversations.concat(action.payload),
+      }
+    case 'SET_ACTIVE_CHAT':
+      return {
+        ...state,
+        activeChat: action.payload,
       }
     default:
       return state

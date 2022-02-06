@@ -1,0 +1,20 @@
+.chatRoom {
+  img {
+    border-radius: 50%;
+    height: 80px;
+  }
+  width: 100%;
+}
+
+.middle-column {
+  display: flex;
+  flex-wrap: wrap;
+  width: 15rem;
+  &-name {
+    color: white;
+  }
+}
+
+.grey-text {
+  color: #7d7d7d
+}

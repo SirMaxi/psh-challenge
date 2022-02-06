@@ -7,3 +7,8 @@ export const setConversations = (payload) => ({
   payload,
   type: 'SET_CONVERSATIONS',
 })
+
+export const setActiveChat = (payload) => ({
+  payload,
+  type: 'SET_ACTIVE_CHAT',
+})

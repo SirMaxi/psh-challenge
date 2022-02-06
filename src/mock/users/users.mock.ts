@@ -1,3 +1,7 @@
+import avatar1 from 'assets/avatar-1.png'
+import avatar2 from 'assets/avatar-2.png'
+import avatar3 from 'assets/avatar-3.png'
+
 export interface User {
   id: string
   firstname: string
@@ -11,21 +15,21 @@ export const usersMock: User[] = [
     id: '2',
     firstname: 'Micaela',
     lastname: 'Alvarez',
-    profilePicture: '../../assets/avatar-1.png',
+    profilePicture: avatar1,
     rol: 'Marketing Manager',
   },
   {
     id: '3',
     firstname: 'Luciana',
     lastname: 'Gutierrez',
-    profilePicture: '../../assets/avatar-2.png',
+    profilePicture: avatar2,
     rol: 'Product Owner',
   },
   {
     id: '4',
     firstname: 'Manuel',
     lastname: 'Hoffmann',
-    profilePicture: '../../assets/avatar-3.png',
+    profilePicture: avatar3,
     rol: 'Scrum Master',
   },
 ]
