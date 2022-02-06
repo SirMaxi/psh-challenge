@@ -1,8 +1,8 @@
 import React from 'react'
 import './sidebar.scss'
 import { Button } from 'react-bootstrap'
-import Header from './Header'
-import Conversations from './Conversations'
+import Header from './Header/Header'
+import Conversations from './Conversations/Conservations'
 
 const Sidebar: React.FC = () => {
   return (
