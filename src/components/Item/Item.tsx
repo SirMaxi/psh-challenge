@@ -25,8 +25,10 @@ const Item: React.FC<ItemProp> = ({
     >
       <img src={imageURL} alt="avatar" />
       <div className="middle-column mx-5 ">
-        <span className="middle-column-name fw-bolder">{name}</span>
-        <span className="grey-text">{message}</span>
+        <div className="middle-column-name fw-bolder">{name}</div>
+        <div className="grey-text">
+          {message.length > 40 ? `${message.substring(0, 40)}...` : message}
+        </div>
       </div>
       <span className="grey-text">{date}</span>
     </div>

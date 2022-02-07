@@ -35,8 +35,9 @@ const ChatInput: React.FC<ChatInputProp> = ({ conversationId }) => {
         className="chat-input-text-area"
         value={value}
         onChange={handleChange}
+        placeholder="Type your message..."
       />
-      <input className="chat-input-button" type="submit" value="Submit" />
+      <input className="chat-input-button" type="submit" value="SEND" />
     </form>
   )
 }

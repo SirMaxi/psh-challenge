@@ -1,4 +1,8 @@
-  .bubble-container{
+.time {
+  color: #a7a7a7;
+}
+
+.bubble-container{
     margin-top: 8px;
     margin-bottom: 8px;
     display:flex;
@@ -43,7 +47,6 @@
   .you {
       background-color: #ffffff;
       margin-left: 18px;
-      margin-right:60px;
   }
   
   .you::before {
@@ -54,7 +57,6 @@
   
   .me {
       background-color: #fceded;
-      margin-left: 60px;
       margin-right:18px;
   }
   

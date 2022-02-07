@@ -25,8 +25,20 @@ const ChatBubble: React.FC<ChatBubbleProps> = ({
       }`}
     >
       <img className="img-circle" src={imageURL} alt="avatar" />
-      <div className={`bubble ${userId === activeUser ? 'me' : 'you'}`}>
-        {text} {date}
+
+      <div>
+        <span
+          className={`d-flex time ${
+            userId === activeUser
+              ? 'justify-content-start'
+              : 'justify-content-end'
+          }`}
+        >
+          {date}
+        </span>
+        <div className={`bubble ${userId === activeUser ? 'me' : 'you'}`}>
+          {text}
+        </div>
       </div>
     </div>
   )

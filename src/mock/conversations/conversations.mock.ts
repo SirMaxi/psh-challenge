@@ -72,7 +72,7 @@ export const conversationsMock: Conversation[] = [
         createdAt: '09.15 AM',
       },
       {
-        userId: '3',
+        userId: '4',
         text: 'Gracias a vos!',
         createdAt: '09.20 AM',
       },

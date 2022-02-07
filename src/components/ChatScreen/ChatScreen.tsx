@@ -5,7 +5,7 @@ import Chat from 'components/Chat/Chat'
 
 const ChatScreen: React.FC = () => {
   return (
-    <div className="separar">
+    <div className="chat-container">
       <Sidebar />
       <Chat />
     </div>
