@@ -1,6 +1,7 @@
 import avatar1 from 'assets/avatar-1.png'
 import avatar2 from 'assets/avatar-2.png'
 import avatar3 from 'assets/avatar-3.png'
+import avatar4 from 'assets/avatar-4.png'
 
 export interface User {
   id: string
@@ -11,6 +12,13 @@ export interface User {
 }
 
 export const usersMock: User[] = [
+  {
+    id: '1',
+    firstname: 'Maxi',
+    lastname: 'Arrettino',
+    profilePicture: avatar4,
+    rol: 'Software Developer',
+  },
   {
     id: '2',
     firstname: 'Micaela',

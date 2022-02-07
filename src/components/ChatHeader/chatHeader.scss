@@ -1,0 +1,23 @@
+.header-container {
+    height: 200px;
+    width: 100%;
+    display: flex;
+    padding: 0px 80px;
+    align-items: center;
+
+    img {
+        border-radius: 50%;
+        height: 120px;
+    }
+}
+
+.names {
+    margin-left: 30px;
+    h1 {
+        font-weight: 900;
+    }
+    h4 {
+        font-weight: 600;
+        color: #777777;
+    }
+}

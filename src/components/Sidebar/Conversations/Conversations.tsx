@@ -18,8 +18,6 @@ const Conversations: React.FC = () => {
   const setChat = (conversationId: string) =>
     dispatch(setActiveChat(conversationId))
 
-  const activeChat = useSelector((state: RootState) => state.chat.activeChat)
-
   return (
     <div>
       {chat.conversations.map((conversation) => {
@@ -31,7 +29,7 @@ const Conversations: React.FC = () => {
           <div
             key={conversationId}
             className={`group ${
-              activeChat === conversationId
+              chat.activeChat === conversationId
                 ? 'border-active'
                 : 'border-disactive'
             }`}
