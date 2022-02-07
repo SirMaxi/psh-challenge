@@ -1,9 +1,18 @@
 .chatRoom {
+  display: flex;
+  justify-content: space-between;
   img {
     border-radius: 50%;
     height: 80px;
   }
   width: 100%;
+  @media screen and (max-width: 1190px) {
+    justify-content: center;
+    flex-wrap: wrap;
+    img {
+      height: 40px;
+    }
+  }
 }
 
 .middle-column {

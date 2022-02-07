@@ -1,15 +1,32 @@
 .card {
-    background-color: none !important;
-    border: none !important;
+  background-color: none !important;
+  border: none !important;
 }
 
 .header {
-    background-color: #ea0a08;
-    min-height: 140px;
+  background-color: #ea0a08;
+  min-height: 140px;
+  display: flex;
+  align-items: center;
+  img {
+    max-width: 90px;
+  }
+  &-title {
+    color: white;
+  }
+  @media screen and (max-width: 1190px) {
+    min-height: none;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
     img {
-        max-width: 90px;
+      height: 50px;
+      margin: 0px !important;
     }
     &-title {
-        color: white;
+      margin: 0px !important;
     }
+  }
 }

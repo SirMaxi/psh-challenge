@@ -19,10 +19,7 @@ const Item: React.FC<ItemProp> = ({
   action,
 }) => {
   return (
-    <div
-      onClick={() => action(conversationId)}
-      className="d-flex chatRoom justify-content-between"
-    >
+    <div onClick={() => action(conversationId)} className="chatRoom">
       <img src={imageURL} alt="avatar" />
       <div className="middle-column mx-5 ">
         <div className="middle-column-name fw-bolder">{name}</div>

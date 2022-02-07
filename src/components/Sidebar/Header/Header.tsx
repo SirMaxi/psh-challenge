@@ -7,11 +7,9 @@ const Header: React.FC = () => {
   return (
     <div>
       <Card>
-        <div className="header d-flex">
+        <div className="header">
           <Card.Img variant="top" src={logo} className="ms-5" />
-          <Card.Title className="header-title my-auto fs-2 ms-3">
-            React Chat
-          </Card.Title>
+          <Card.Title className="header-title fs-2 ms-3">React Chat</Card.Title>
         </div>
       </Card>
     </div>
