@@ -15,6 +15,15 @@ const ChatInput: React.FC<ChatInputProp> = ({ conversationId }) => {
   const handleChange = (event) => setValue(event.target.value)
   const activeUser = useSelector((state: RootState) => state.chat.activeUser)
 
+  const getTime = () => {
+    const date = new Date()
+    return date.toLocaleTimeString(navigator.language, {
+      hour: '2-digit',
+      minute: '2-digit',
+      hour12: true,
+    })
+  }
+
   const handleSubmit = (event) => {
     event.preventDefault()
     dispatch(
@@ -22,7 +31,7 @@ const ChatInput: React.FC<ChatInputProp> = ({ conversationId }) => {
         value,
         activeUser,
         conversationId,
-        createdAt: '10:15 AM',
+        createdAt: getTime().toUpperCase(),
       })
     )
     setValue('')
